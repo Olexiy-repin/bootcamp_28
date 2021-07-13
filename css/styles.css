@@ -9,30 +9,7 @@ body {
   font-weight: 600;
 }
 
-.menu-link {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  /* color: #ffffff; */
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--accent-color);
-}
-
-.header-tel {
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  /* color: #ffffff; */
-}
-
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
-
+/* ============== COMPONENTS ============== */
 .modal-btn {
   font-size: 12px;
   line-height: 1.33;
@@ -61,18 +38,11 @@ body {
 
 .suptitle {
   font-size: 11px;
+  font-weight: 600;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
-}
-
-.hero-title {
-  font-family: var(--secondary-font);
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  /* color: #ffffff; */
+  /* color: rgba(157, 164, 189, 0.6); */
 }
 
 .description {
@@ -80,5 +50,145 @@ body {
   font-size: 18px;
   line-height: 1.67;
   letter-spacing: 0.02em;
+  /* color: #9da4bd; */
+}
+
+.title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+  /* color: #303030; */
+}
+
+/* ============== END COMPONENTS ============== */
+
+/* ============== HEADER ============== */
+.menu-link {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
+.header-tel {
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  /* color: #ffffff; */
+}
+
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--accent-color);
+}
+/* ============== END HEADER ============== */
+
+/* ============== HERO ============== */
+.hero-title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  /* color: #ffffff; */
+}
+/* ============== END HERO ============== */
+
+/* ============== ABOUT ============== */
+.about-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #555555;
+}
+/* ============== END ABOUT ============== */
+
+/* ============== SERVICES ============== */
+.services-list-name,
+.services-list-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
   color: #9da4bd;
 }
+/* ============== END SERVICES ============== */
+
+/* ============== ADVANTAGES ============== */
+.advantages-list-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+
+.advantages-list-desc {
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: #303030;
+}
+/* ============== END ADVANTAGES ============== */
+
+/* ============== MASTERS ============== */
+.masters-list-name {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+
+.masters-list-position {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+/* ============== END MASTERS ============== */
+
+/* ============== GALLERY ============== */
+
+/* ============== END GALLERY ============== */
+
+/* ============== CONTACT FORM ============== */
+
+/* ============== END CONTACT FORM ============== */
+
+/* ============== CONTACT INFORMATION ============== */
+.contact-list-link {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+
+.contact-info-date {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
+}
+/* ============== END CONTACT INFORMATION ============== */
+
+/* ============== FOOTER ============== */
+.copyright {
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+}
+/* ============== END FOOTER ============== */
