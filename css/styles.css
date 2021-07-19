@@ -75,6 +75,10 @@ img {
   border-radius: 25px;
 }
 
+.modal-btn-theme-dark {
+  color: #ffffff;
+}
+
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--accent-color);
@@ -83,6 +87,17 @@ img {
 
 .social-links-list {
   display: flex;
+  align-items: center;
+}
+
+.social-links-list::before {
+  display: block;
+  content: "";
+  flex-shrink: 0;
+  width: 60px;
+  height: 1px;
+  background-color: #303030;
+  margin-right: 40px;
 }
 
 .social-links-list-item:not(:last-child) {
@@ -102,13 +117,38 @@ img {
 }
 
 .suptitle {
+  display: flex;
+  align-items: center;
   font-size: 11px;
   font-weight: 600;
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  /* color: rgba(157, 164, 189, 0.6); */
+}
+
+.suptitle::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+}
+
+.suptitle-theme-dark {
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-theme-dark::before {
+  background-color: rgba(157, 164, 189, 0.6);
+}
+
+.suptitle-theme-light {
+  color: #303030;
+}
+
+.suptitle-theme-light::before {
+  background-color: #303030;
 }
 
 .description {
@@ -117,6 +157,14 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   /* color: #9da4bd; */
+}
+
+.description-theme-dark {
+  color: #9da4bd;
+}
+
+.description-theme-light {
+  color: #555555;
 }
 
 .title {
@@ -129,10 +177,41 @@ img {
 
 .title-theme-dark {
   margin-bottom: 44px;
+  color: #ffffff;
 }
 
 .title-theme-light {
   margin-bottom: 20px;
+  color: #303030;
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: #303030;
+}
+
+.social-list-icon {
+  fill: #303030;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--accent-color);
 }
 
 /* ============== END COMPONENTS ============== */
@@ -206,6 +285,12 @@ img {
   padding-top: 272px;
   padding-bottom: 206px;
   background-color: #303030;
+  background-image: linear-gradient(
+      rgba(25, 28, 38, 0.2),
+      rgba(25, 28, 38, 0.2)
+    ),
+    url("../images/hero/bg.jpg");
+  background-size: cover;
 }
 
 .hero-title {
@@ -214,7 +299,7 @@ img {
   line-height: 1.18;
   letter-spacing: 0.05em;
   margin-bottom: 20px;
-  /* color: #ffffff; */
+  color: #ffffff;
 }
 
 .hero-description {
@@ -254,6 +339,12 @@ img {
 /* ============== END ABOUT ============== */
 
 /* ============== SERVICES ============== */
+.services {
+  background-color: #111319;
+  background-image: url("../images/services/bg.png");
+  background-size: cover;
+}
+
 .services-list-wrapper {
   display: flex;
   margin-bottom: 50px;
@@ -262,12 +353,34 @@ img {
 .services-list {
   width: 50%;
   padding: 30px 40px;
-  border: 1px solid;
+}
+
+.services-list:nth-child(odd) {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+.services-list:nth-child(even) {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .services-list-item {
   display: flex;
-  justify-content: space-between;
+  align-items: baseline;
+}
+
+.services-list-item::before {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  margin: 0 6px;
+  background-color: rgba(157, 164, 189, 0.12);
 }
 
 .services-list-item:not(:last-child) {
@@ -281,6 +394,10 @@ img {
   line-height: 1.67;
   letter-spacing: 0.02em;
   color: #9da4bd;
+}
+
+.services-list-name {
+  order: -1;
 }
 
 .services-modal-btn {
@@ -342,6 +459,10 @@ img {
 /* ============== END ADVANTAGES ============== */
 
 /* ============== MASTERS ============== */
+.masters {
+  background-color: #f7f7f7;
+}
+
 .masters-list {
   display: flex;
   flex-wrap: wrap;
@@ -365,6 +486,8 @@ img {
 
 .masters-list-content {
   padding-top: 30px;
+  padding-right: 82px;
+  padding-left: 82px;
 }
 
 .masters-list-name {
@@ -384,6 +507,7 @@ img {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+  margin-bottom: 30px;
 }
 /* ============== END MASTERS ============== */
 
