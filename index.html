@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 
@@ -22,7 +23,7 @@
     <header class="header">
         <div class="container header-container">
             <nav class="nav">
-                <a class="logo" href="./">
+                <a class="logo animate__bounce" href="./">
                     <svg class="logo-icon" width="68" height="54">
                         <use href="./images/sprite.svg#logo"></use>
                     </svg>
@@ -43,7 +44,7 @@
                 </ul>
             </nav>
             <a class="header-tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="modal-btn" type="button">онлайн-запись</button>
+            <button class="modal-btn modal-btn-theme-dark" data-modal-open type="button">онлайн-запись</button>
         </div>
     </header>
     <main>
@@ -51,7 +52,7 @@
         <section class="hero">
             <div class="container hero-container">
                 <div class="hero-left-side">
-                    <ul class="social-links-list list">
+                    <ul class="social-links-list hero-social-links-list list">
                         <li class="social-links-list-item">
                             <a class="social-links-list-link link" href="" lang="en">Instagram</a>
                         </li>
@@ -384,8 +385,15 @@
                 </li>
             </ul>
         </div>
-
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>X</button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
