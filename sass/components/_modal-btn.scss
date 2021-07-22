@@ -1,7 +1,6 @@
 .modal-btn {
   padding: 12px 20px;
-  font-size: 12px;
-  line-height: 1.33;
+  @include font(12px, 600, 16px);
   letter-spacing: 0.09em;
   text-transform: uppercase;
   cursor: pointer;
@@ -9,14 +8,14 @@
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   transition: all 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #ffffff;
+  }
 }
 
 .modal-btn-theme-dark {
-  color: #ffffff;
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--accent-color);
   color: #ffffff;
 }
