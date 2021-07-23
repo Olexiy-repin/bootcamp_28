@@ -1,8 +1,8 @@
-.hero-container {
+.hero__container {
   display: flex;
 }
 
-.hero-left-side {
+.hero__left-side {
   display: flex;
   align-items: flex-end;
   width: 100px;
@@ -15,7 +15,7 @@
   transform-origin: left top;
 }
 
-.hero-right-side {
+.hero__right-side {
   flex-grow: 1;
   padding-left: 100px;
   padding-top: 272px;
@@ -29,7 +29,7 @@
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-family: var(--secondary-font);
   font-size: 72px;
   line-height: 1.18;
@@ -38,6 +38,6 @@
   color: #ffffff;
 }
 
-.hero-description {
+.hero__description {
   width: 400px;
 }

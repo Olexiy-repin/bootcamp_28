@@ -88,7 +88,7 @@ img {
   color: #ffffff;
 }
 
-.modal-btn-theme-dark {
+.modal-btn_theme_dark {
   color: #ffffff;
 }
 
@@ -107,11 +107,11 @@ img {
   margin-right: 40px;
 }
 
-.social-links-list-item:not(:last-child) {
+.social-links-list__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.social-links-list-link {
+.social-links-list__link {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;
@@ -119,7 +119,7 @@ img {
   transition: color 250ms linear;
 }
 
-.social-links-list-link:hover, .social-links-list-link:focus {
+.social-links-list__link:hover, .social-links-list__link:focus {
   color: var(--accent-color);
 }
 
@@ -380,7 +380,7 @@ img {
   padding-top: 32px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -391,20 +391,23 @@ img {
 }
 
 .logo {
-  margin-right: 70px;
   animation-duration: 1000ms;
   animation-iteration-count: 2;
+}
+
+.header__logo {
+  margin-right: 70px;
 }
 
 .menu {
   display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 40px;
 }
 
-.menu-link {
+.menu__link {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
@@ -412,11 +415,11 @@ img {
   transition: color 250ms linear;
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
-.header-tel {
+.header__tel {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
@@ -426,15 +429,15 @@ img {
   transition: color 250ms linear;
 }
 
-.header-tel:hover, .header-tel:focus {
+.header__tel:hover, .header__tel:focus {
   color: var(--accent-color);
 }
 
-.hero-container {
+.hero__container {
   display: flex;
 }
 
-.hero-left-side {
+.hero__left-side {
   display: flex;
   align-items: flex-end;
   width: 100px;
@@ -447,7 +450,7 @@ img {
   transform-origin: left top;
 }
 
-.hero-right-side {
+.hero__right-side {
   flex-grow: 1;
   padding-left: 100px;
   padding-top: 272px;
@@ -457,7 +460,7 @@ img {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   font-family: var(--secondary-font);
   font-size: 72px;
   line-height: 1.18;
@@ -466,7 +469,7 @@ img {
   color: #ffffff;
 }
 
-.hero-description {
+.hero__description {
   width: 400px;
 }
 

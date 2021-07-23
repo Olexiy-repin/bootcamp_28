@@ -13,13 +13,13 @@
   }
 }
 
-.social-links-list-item {
+.social-links-list__item {
   &:not(:last-child) {
     margin-right: 40px;
   }
 }
 
-.social-links-list-link {
+.social-links-list__link {
   font-size: 11px;
   line-height: 1.36;
   letter-spacing: 0.2em;

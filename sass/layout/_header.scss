@@ -4,7 +4,7 @@
   padding-top: 32px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
 }
@@ -15,22 +15,25 @@
 }
 
 .logo {
-  margin-right: 70px;
   animation-duration: 1000ms;
   animation-iteration-count: 2;
+}
+
+.header__logo {
+  margin-right: 70px;
 }
 
 .menu {
   display: flex;
 }
 
-.menu-item {
+.menu__item {
   &:not(:last-child) {
     margin-right: 40px;
   }
 }
 
-.menu-link {
+.menu__link {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
@@ -43,7 +46,7 @@
   }
 }
 
-.header-tel {
+.header__tel {
   font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.1em;
