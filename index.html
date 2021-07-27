@@ -20,7 +20,7 @@
 
 <body>
     <!-- HEADER -->
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__container">
             <nav class="nav">
                 <a class="logo header__logo animate__bounce" href="./">
@@ -43,10 +43,53 @@
                     </li>
                 </ul>
             </nav>
+            <button class="burger-btn" data-menu-open>
+                <svg class="burger-btn__icon">
+                    <use href="./images/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
             <a class="header__tel link" href="tel:+380441111111">+38 044 111 11 11</a>
-            <button class="modal-btn modal-btn_theme_dark" data-modal-open type="button">онлайн-запись</button>
+            <button class="modal-btn modal-btn_theme_dark header__modal-btn" data-modal-open
+                type="button">онлайн-запись</button>
         </div>
-    </header> -->
+        <div class="mobile-menu" data-menu>
+            <div class="container mobile-menu__container">
+                <button class="mobile-menu__close-btn" data-menu-close>
+                    <svg class="mobile-menu__close-icon">
+                        <use href="./images/sprite.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <ul class="nav-list list">
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link link">О нас</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link link">Услуги и цены</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link link">Мастера</a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__link link">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social-list list">
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Instagram</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Twitter</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">Facebook</a>
+                    </li>
+                    <li class="mobile-social-list__item">
+                        <a href="" class="mobile-social-list__link link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <!-- HERO -->
         <section class="hero">
@@ -80,15 +123,39 @@
                     <ul class="about-list list">
                         <li class="about-list-item">
                             <picture>
-                                <source srcset="./images/about/about-img-desktop-1.jpg" media="(min-width: 1200px)">
-                                <source srcset="./images/about/about-img-tablet-1.jpg" media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/about/about-img-desktop-1.webp 1x, ./images/about/about-img-desktop-1@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/about-img-desktop-1.jpg 1x, ./images/about/about-img-desktop-1@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/about/about-img-tablet-1.webp 1x, ./images/about/about-img-tablet-1@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/about-img-tablet-1.jpg 1x, ./images/about/about-img-tablet-1@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+
                                 <img class="about-list-img" src="" alt="мастер бреет бороду клиенту">
                             </picture>
                         </li>
                         <li class="about-list-item">
                             <picture>
-                                <source srcset="./images/about/about-img-desktop-2.jpg" media="(min-width: 1200px)">
-                                <source srcset="./images/about/about-img-tablet-2.jpg" media="(min-width: 768px)">
+                                <source
+                                    srcset="./images/about/about-img-desktop-2.webp 1x, ./images/about/about-img-desktop-2@2x.webp 2x"
+                                    media="(min-width: 1200px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/about-img-desktop-2.jpg 1x, ./images/about/about-img-desktop-2@2x.jpg 2x"
+                                    media="(min-width: 1200px)">
+
+                                <source
+                                    srcset="./images/about/about-img-tablet-2.webp 1x, ./images/about/about-img-tablet-2@2x.webp 2x"
+                                    media="(min-width: 768px)" type="image/webp">
+                                <source
+                                    srcset="./images/about/about-img-tablet-2.jpg 1x, ./images/about/about-img-tablet-2@2x.jpg 2x"
+                                    media="(min-width: 768px)">
+
                                 <img class="about-list-img" src="" alt="мастер стрижет клиента">
                             </picture>
                         </li>
@@ -429,6 +496,7 @@
         </div>
     </div> -->
 
+    <script src="./js/menu.js"></script>
     <!-- <script src="./js/modal.js"></script> -->
 </body>
 
